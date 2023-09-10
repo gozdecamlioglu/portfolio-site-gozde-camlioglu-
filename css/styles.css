@@ -1,0 +1,117 @@
+/*
+Colors used:
+Higlight Color (orange-red): #ca1d05
+Secondary Color (gray): #6c757d;
+*/
+
+body {
+    background-color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.35em;
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+}
+
+/*nav*/
+a {
+    color: black;
+    text-decoration: none;
+    /* No underlining */
+}
+
+a:hover a:focus {
+    color: #6c757d;
+    text-decoration: underline;
+    /* Underlining when hovering over a link */
+}
+
+a:visited {
+    /* visited link */
+    color: black;
+    text-decoration: none;
+    /* No underlining */
+}
+
+a:active {
+    /* selected link */
+    color: #ca1d05;
+    text-decoration: none;
+    /* No underlining */
+}
+
+/*view project button style*/
+.button,
+.button:visited {
+    display: inline-block;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 50px;
+    opacity: 1;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+
+.button:after {
+    background-color: white;
+    border: 2px solid #ca1d05;
+    color: black;
+}
+
+.button:hover {
+    background-color: white;
+    border: 2px solid #ca1d05;
+    color: #ca1d05;
+}
+
+.button:hover:after {
+    width: 110%;
+}
+
+/*-- Footer --*/
+footer {
+	padding: 2em;
+	background-color: white;
+	color: black;
+	text-align: center;
+}
+
+.email {
+	color: #ca1d05;
+}
+
