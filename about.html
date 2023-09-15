@@ -9,14 +9,15 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <title>Gozde Camlioglu Agilkaya | About</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <a href="./index.html">Gozde Camlioglu Agilkaya</a>
+        <div class="container">
+            <a href="./index.html" class="logo">Gozde Camlioglu Agilkaya</a>
             <nav>
                 <ul>
                     <li><a href="index.html">Works</a></li>
@@ -27,16 +28,18 @@
         </div>
     </header>
     <main>
-        <div>
-            <div>
-                <picture>
-                    <source media="(max-widht:400px)" srcset="img/about-photo.png">
-                    <img src="img/about-photo.png" alt="Profile Photo">
-                </picture>
+        <div class="container">
+            <div class="row">
+                <div class="picture">
+                    <picture>
+                        <source media="(max-widht:400px)" srcset="img/about-photo.png">
+                        <img src="img/about-photo.png" alt="Profile Photo">
+                    </picture>
+                </div>
             </div>
             <div>
                 <!--start column 1-->
-                <div>
+                <div class="container">
                     <p>Hello there! I'm Gozde, a Toronto-based multidisciplinary UX/UI designer with a background in
                         interior design.</p>
                     <p>I graduated from Hacettepe University, Faculty of Fine Arts, Department of Interior Architecture
@@ -50,87 +53,99 @@
                     <p>Combining all of my multidisciplinary knowledge and experience so that the end-to-end user
                         experience is seamless, intuitive and visually satisfying is the key to my holistic design
                         approach.</p>
-                    <a href="files/gozde-resume.pdf" target="_blank" download="">Resume </a>
+                    <div>
+                        <a href="files/gozde-resume.pdf" target="_blank" download="" class="resume">Resume</a>
+                    </div>
                 </div>
                 <!--end column 1-->
-                <div>
-                    <!--start column 2-->
-                    <div>
-                        <h2>Skills&Tools</h2>
+                <div class="container">
+                    <div id="skills-tools" class="row">
+                        <!--start column 2-->
+                        <div>
+                            <h2>Skills&Tools</h2>
+                        </div>
+                        <div>
+                            <!--start skills column-->
+                            <h3>Skills</h3>
+                            <ul>
+                                <li>User-Centered Design
+                                </li>
+                                <li>User Research
+                                </li>
+                                <li>User Testing
+                                </li>
+                                <li>Wireframing
+                                </li>
+                                <li>Brand and Logo Design
+                                </li>
+                                <li>Iconography and Typography
+                                </li>
+                                <li>Visual Design
+                                </li>
+                                <li>Information Architecture</li>
+                            </ul>
+                        </div>
+                        <!--end skills column-->
+                        <div>
+                            <!--start tools column-->
+                            <h3>Tools</h3>
+                            <ul>
+                                <li>Figma
+                                </li>
+                                <li>Figjam
+                                </li>
+                                <li>Adobe Illustrator
+                                </li>
+                                <li>Adobe Photoshop
+                                </li>
+                                <li>Adobe XD
+                                </li>
+                                <li>HTML/CSS
+                                </li>
+                                <li>Miro
+                                </li>
+                                <li>Procreate</li>
+                            </ul>
+                        </div>
+                        <!--end tools column-->
                     </div>
-                    <div>
-                        <!--start skills column-->
-                        <h3>Skills</h3>
-                        <ul>
-                            <li>User-Centered Design
-                            </li>
-                            <li>User Research
-                            </li>
-                            <li>User Testing
-                            </li>
-                            <li>Wireframing
-                            </li>
-                            <li>Brand and Logo Design
-                            </li>
-                            <li>Iconography and Typography
-                            </li>
-                            <li>Visual Design
-                            </li>
-                            <li>Information Architecture</li>
-                        </ul>
-                    </div>
-                    <!--end skills column-->
-                    <div>
-                        <!--start tools column-->
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>Figma
-                            </li>
-                            <li>Figjam
-                            </li>
-                            <li>Adobe Illustrator
-                            </li>
-                            <li>Adobe Photoshop
-                            </li>
-                            <li>Adobe XD
-                            </li>
-                            <li>HTML/CSS
-                            </li>
-                            <li>Miro
-                            </li>
-                            <li>Procreate</li>
-                        </ul>
-                    </div>
-                    <!--end tools column-->
                 </div>
                 <!--end column 2-->
             </div>
         </div>
     </main>
     <footer id="Contact">
-        <div>
-            <!--get start footer content-->
-            <h2>Get in touch</h2>
-            <p>Do you like my work and want to discuss opportunities? Please get in touch. <br>
-                Call:
-                <a href="tel:#">+16479063039</a> <br>
-                Email:
-                <a href="mailto:gozdecamlioglu@gmail.com">gozdecamlioglu@gmail.com</a>
-            </p>
-            <div>
-                <!--social media layout and placeholders-->
-                <a href="https://www.linkedin.com/in/gozdecamlioglu/" target="_blank">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g><path d="M0 0h24v24H0z" fill="none"/><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z" fill-rule="nonzero"/></g></svg>
-                </a>
-                <a href="https://www.behance.net/gcamlioglu" target="_blank">
-                    <svg data-name="Layer 2" id="Layer_2" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M14.56,17s2.64-.51,2.62-4.6S13,7.75,11.32,7.7s-9.82,0-9.82,0V27.32H12.36s5.47,0,5.44-6.23A4.17,4.17,0,0,0,14.56,17ZM5.92,11h5a2.23,2.23,0,0,1,0,4.46h-5Zm5,12.9H6.05V18.63h4.84a2.63,2.63,0,1,1,0,5.25Z" />
-                        <path
-                            d="M25.88,12.24c-8.7.11-6.15,11-6.15,11a6.85,6.85,0,0,0,6.71,4.08c5.13-.13,6.47-3.26,6.63-4.52H29.4s-.5,1.58-3,1.56S23,22.53,23,20.71H33.45S34.59,12.14,25.88,12.24ZM23,18.18a3.17,3.17,0,0,1,3.16-3.08,3.38,3.38,0,0,1,3.51,3.08Z" />
-                        <rect height="1.91" width="7.87" x="22.32" y="8.41" />
-                    </svg>
-                </a>
+        <div class="container">
+            <div class="text contact">
+                <!--get start footer content-->
+                <h3>Get in touch</h3>
+                <p>
+                    Do you like my work and want to discuss opportunities?
+                    <br>
+                    <a href="mailto:gozdecamlioglu@gmail.com" class="email">Please email me!</a>
+                </p>
+                <div>
+                    <!--social media layout and placeholders-->
+                    <a href="https://www.linkedin.com/in/gozdecamlioglu/" target="_blank" class="social">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
+                                    fill-rule="nonzero" />
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://www.behance.net/gcamlioglu" target="_blank" class="social">
+                        <svg data-name="Layer 2" id="Layer_2" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.56,17s2.64-.51,2.62-4.6S13,7.75,11.32,7.7s-9.82,0-9.82,0V27.32H12.36s5.47,0,5.44-6.23A4.17,4.17,0,0,0,14.56,17ZM5.92,11h5a2.23,2.23,0,0,1,0,4.46h-5Zm5,12.9H6.05V18.63h4.84a2.63,2.63,0,1,1,0,5.25Z" />
+                            <path
+                                d="M25.88,12.24c-8.7.11-6.15,11-6.15,11a6.85,6.85,0,0,0,6.71,4.08c5.13-.13,6.47-3.26,6.63-4.52H29.4s-.5,1.58-3,1.56S23,22.53,23,20.71H33.45S34.59,12.14,25.88,12.24ZM23,18.18a3.17,3.17,0,0,1,3.16-3.08,3.38,3.38,0,0,1,3.51,3.08Z" />
+                            <rect height="1.91" width="7.87" x="22.32" y="8.41" />
+                        </svg>
+                    </a>
+                </div>
             </div>
             <p>Copyright Gozde Camlioglu 2023</p>
         </div>
