@@ -12,41 +12,44 @@ Secondary Color (gray): #6c757d;
 .container {
     max-width: 1200px;
     padding: 0 15px;
-  }
+}
+
 #work .row {
-    margin: 25px 0; /* 25px top and bottom, 0 left and right */
-  }
-header{
+    margin: 25px 0;
+    /* 25px top and bottom, 0 left and right */
+}
+
+header {
     background-color: white;
     padding: 10px;
     margin: 0;
     border-bottom: 1px solid #6c757d;
     position: fixed;
     width: 100%;
-    text-align: center;
+    text-align: unset;
     display: inline-block
 }
 
 .logo {
     max-width: 250px;
     text-align: center;
-  }
+}
 
-  nav > ul {
+nav>ul {
     list-style-type: none;
     padding: 0;
-  }
+}
 
-  nav > ul > li {
+nav>ul>li {
     display: inline-block;
-  }
-  
-  nav > ul > li > a {
+}
+
+nav>ul>li>a {
     padding: 0 10px;
     text-transform: lowercase;
     font-weight: 700;
     width: 100%;
-  }
+}
 
 body {
     background-color: white;
@@ -63,15 +66,17 @@ body {
     padding: 20px 0;
     display: inline-block;
     width: 100%;
-  }
+    text-align: center;
+}
 
 #hero h2 {
-    text-align: center; /* Centers text */
+    text-align: center;
+    /* Centers text */
 }
 
 main {
     padding-top: 133px;
-  }
+}
 
 h1,
 h2,
@@ -103,6 +108,38 @@ h4 {
 img {
     width: 100%;
 }
+
+.berlin-illustration {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+  }
+
+.sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
 
 /*nav*/
 a {
@@ -143,7 +180,7 @@ a:active {
     padding: 10px 30px;
     margin-top: 50px;
     opacity: 1;
-    transition-duration: 0.4s;
+    transition: 0.4s opacity;
     border-radius: 10px;
 }
 
@@ -151,6 +188,7 @@ a:active {
     background-color: white;
     border: 2px solid #ca1d05;
     color: black;
+    opacity: 0.8;
 }
 
 .button:hover {
@@ -165,14 +203,14 @@ a:active {
 
 /*about page style*/
 
-.picture{
+.picture {
     align-self: center;
     width: 75%;
 }
 
 
 /*resume style*/
-.resume{
+.resume {
     display: inline-block;
     background-color: white;
     border: 2px solid #ca1d05;
@@ -189,14 +227,14 @@ a:active {
 
 /*-- Footer --*/
 footer {
-	padding: 2em;
-	background-color: white;
-	color: black;
-	text-align: center;
+    padding: 2em;
+    background-color: white;
+    color: black;
+    text-align: center;
 }
 
 .email {
-	color: #ca1d05;
+    color: #ca1d05;
 }
 
 
@@ -207,4 +245,68 @@ footer {
     display: inline-block;
     width: 100%;
     text-align: center;
-  }
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+
+    main {
+        padding-top: 99px;
+    }
+
+    #hero {
+        text-align: center;
+    }
+
+    #hero span {
+        display: block;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    [class*="col-"] {
+        column-gap: 50px;
+    }    
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}
