@@ -114,32 +114,52 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 @keyframes color-change {
-    0% {fill: #edc655;}
-    50% {fill: #fcffad;}
-    100% {fill: #f76414;}
-  }
+    0% {
+        fill: #edc655;
+    }
+
+    50% {
+        fill: #fcffad;
+    }
+
+    100% {
+        fill: #f76414;
+    }
+}
 
 .sun {
     animation: 4s color-change infinite alternate linear;
-  }
+}
 
 @keyframes cloud-move {
-    from {transform: translate(0,50px);}
-    to {transform: translate(200px,50px);}
-  }
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(200px, 50px);
+    }
+}
 
 .cloud-front {
     animation: 30s cloud-move infinite alternate linear;
-  }
+}
 
 @keyframes cloud-move-reverse {
-    from {transform: translate(446px,48px);}
-    to {transform: translate(100px, 48px);}
-  }
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
+}
+
 .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
-  }
+}
 
 /*nav*/
 a {
@@ -227,6 +247,7 @@ a:active {
 
 /*-- Footer --*/
 footer {
+    display: inline-block;
     padding: 2em;
     background-color: white;
     color: black;
@@ -237,6 +258,11 @@ footer {
     color: #ca1d05;
 }
 
+.social {
+    display: inline-block;
+    width: 10%;
+    margin: 4px;
+}
 
 /*-- Skills and Tools Style --*/
 #skills-tools {
@@ -276,16 +302,19 @@ Medium devices (640px and larger)
 
     .col-md-6 {
         width: 50%;
+        float: left;
+        padding: 50px;
     }
 
     [class*="col-"] {
         column-gap: 50px;
-    }    
+    }
+
     .row::after {
         content: "";
         clear: both;
         display: table;
-      }
+    }
 }
 
 /* ==============================
@@ -296,7 +325,19 @@ Large devices (1024px or larger)
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-      }
+    }
+
+    .col-lg-7 {
+        width: 60%;
+        float: left;
+        padding: 50px;
+    }
+
+    .col-lg-5 {
+        width: 40%;
+        float: left;
+        padding: 50px;
+    }
 }
 
 /* ==============================
@@ -308,5 +349,17 @@ X-large devices (1440px or larger)
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-      }
+    }
+
+    .col-lg-7 {
+        width: 60%;
+        float: left;
+        padding: 50px;
+    }
+
+    .col-lg-5 {
+        width: 40%;
+        float: left;
+        padding: 50px;
+    }
 }
