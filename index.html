@@ -12,19 +12,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <title>Gozde Camlioglu Agilkaya | UX/UI Designer</title>
+    <script src="https://kit.fontawesome.com/09310d0831.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <a href="./index.html" class="logo"> Gozde Camlioglu Agilkaya </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Works</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="./index.html" class="logo"> Gozde Camlioglu Agilkaya </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Works</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -49,8 +53,8 @@
                         <div class="col-md-6 col-lg-5"></div>
                         <h3>Iconiq</h3>
                         <p>
-                            Iconiq is a high-end furniture and decoration brand that wants to make design
-                            products accessible to everyone.
+                            Iconiq is a high-end furniture and decoration brand that wants to make design products
+                            accessible to everyone.
                         </p>
                         <a href="iconiq.html" class="button">View project</a>
                     </div>
@@ -69,8 +73,7 @@
                         <h3>Investpie</h3>
                         <p>
                             Investpie is for people who are interested in investment and want to learn about
-                            the
-                            current market and economy.
+                            the current market and economy.
                         </p>
                         <a href="investpie.html" class="button">View project</a>
                     </div>
@@ -87,8 +90,7 @@
                         <div class="col-md-6 col-lg-5"></div>
                         <h3>Fernweh</h3>
                         <p>
-                            Fernweh is a guide app for those who want to discover new places and plan their
-                            travels.
+                            Fernweh is a guide app for those who want to discover new places and plan their travels.
                         </p>
                         <a href="fernweh.html" class="button">View project</a>
                     </div>
@@ -1583,6 +1585,8 @@
         </div>
         <!--end footer content-->
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 

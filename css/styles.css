@@ -6,6 +6,8 @@ Secondary Color (gray): #6c757d;
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /*layout style*/
@@ -26,13 +28,25 @@ header {
     border-bottom: 1px solid #6c757d;
     position: fixed;
     width: 100%;
-    text-align: unset;
-    display: inline-block
+    display: inline-block;
 }
 
 .logo {
     max-width: 250px;
-    text-align: center;
+    align-items: center;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+/* nav {
+    display: inline-block;
+    width: 100%; 
+} */
+
+nav > ul { /*affects only ul in navigation class, takes away bullet points and takes away padding so it is centered correctly*/
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav>ul {
@@ -40,14 +54,28 @@ nav>ul {
     padding: 0;
 }
 
-nav>ul>li {
-    display: inline-block;
+.navtoggle li:not(:last-child) {
+    display: none;
+    padding: 0 0 10px;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    font-size: 20px;
+    padding-right: 0;
 }
 
 nav>ul>li>a {
     padding: 0 10px;
     text-transform: lowercase;
-    font-weight: 700;
+    font-weight: 200;
     width: 100%;
 }
 
@@ -198,7 +226,7 @@ a:active {
     font-size: 16px;
     text-decoration: none;
     padding: 10px 30px;
-    margin-top: 50px;
+    margin-top: 1em;
     opacity: 1;
     transition: 0.4s opacity;
     border-radius: 10px;
@@ -224,10 +252,10 @@ a:active {
 /*about page style*/
 
 .picture {
-    align-self: center;
-    width: 75%;
+    padding: 2em;
+    width: 40%;
+    align-items: center;
 }
-
 
 /*resume style*/
 .resume {
@@ -238,10 +266,11 @@ a:active {
     font-size: 16px;
     text-decoration: none;
     padding: 10px 30px;
-    margin: 50px 150px 50px 100px;
+    margin: 2em;
     opacity: 1;
     transition-duration: 0.4s;
     border-radius: 10px;
+    align-items: center;
 }
 
 
@@ -252,6 +281,7 @@ footer {
     background-color: white;
     color: black;
     text-align: center;
+    width: 100%;
 }
 
 .email {
@@ -315,11 +345,27 @@ Medium devices (640px and larger)
         clear: both;
         display: table;
     }
+
+    .logo {
+        max-width: 150px;
+    }
+
+    nav>ul>li {
+        display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    }
 }
 
 /* ==============================
-Large devices (1024px or larger)
-================================= */
+      Large devices (1024px or larger)
+    ================================= */
 @media only screen and (min-width: 1024px) {
     .container {
         max-width: 1200px;
