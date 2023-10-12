@@ -18,15 +18,18 @@
 <body>
     <header>
         <div class="container">
-            <a href="./index.html" class="logo"> Gozde Camlioglu Agilkaya </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Works</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-                </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="./index.html" class="logo"> Gozde Camlioglu Agilkaya </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Works</a></li>
+                        <li><a href="about.html" onclick="menuToggle()">About</a></li>
+                        <li><a href="contact.html" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                    class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>

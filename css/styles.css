@@ -43,7 +43,8 @@ header {
     width: 100%; 
 } */
 
-nav > ul { /*affects only ul in navigation class, takes away bullet points and takes away padding so it is centered correctly*/
+nav>ul {
+    /*affects only ul in navigation class, takes away bullet points and takes away padding so it is centered correctly*/
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -64,12 +65,35 @@ nav>ul {
     position: relative;
 }
 
+.navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #ca1d05;
+  }
+  
 .navtoggle li .icon {
     position: absolute;
     right: 0;
     top: 1px;
     font-size: 20px;
     padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+
+    
+.navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
+
+
+/*display: inline-block;
+    width: auto; */
+
+.fa-bars {
+    float: right;
 }
 
 nav>ul>li>a {
