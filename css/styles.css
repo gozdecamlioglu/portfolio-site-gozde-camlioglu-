@@ -17,8 +17,8 @@ Secondary Color (gray): #6c757d;
 }
 
 #work .row {
-    margin: 25px 0;
-    /* 25px top and bottom, 0 left and right */
+    margin: 60px 0;
+    /* 60px top and bottom, 0 left and right */
 }
 
 header {
@@ -29,6 +29,7 @@ header {
     position: fixed;
     width: 100%;
     display: inline-block;
+    z-index: 1;
 }
 
 .logo {
@@ -116,18 +117,21 @@ body {
 #hero {
     background-color: white;
     padding: 20px 0;
-    display: inline-block;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     width: 100%;
     text-align: center;
-}
 
+}
 #hero h2 {
-    text-align: center;
-    /* Centers text */
+    margin-bottom:16px;
 }
-
+#hero p {
+    max-width:600px;
+}
 main {
-    padding-top: 133px;
+    padding-top: 60px;
 }
 
 h1,
@@ -159,6 +163,25 @@ h4 {
 
 img {
     width: 100%;
+}
+.project-images {
+    max-width: 80%;
+    display: block;
+    margin: 0px auto 60px auto;
+}
+.project-images img{
+display: block;
+
+}
+.project-image {
+    display: block;
+    position: relative;
+    max-width: 500px;
+
+}
+.skills-block {
+    max-width: 80%;
+    margin: 0px auto;
 }
 
 .berlin-illustration {
@@ -254,6 +277,7 @@ a:active {
     opacity: 1;
     transition: 0.4s opacity;
     border-radius: 10px;
+    transition:all 0.25s ease;
 }
 
 .button:after {
@@ -277,12 +301,17 @@ a:active {
 
 .picture {
     padding: 2em;
-    width: 40%;
-    align-items: center;
+    width: 60%;
+    margin:0px auto;
+    display: block;
+}
+.about-content {
+    text-align: center;
+
 }
 
 /*resume style*/
-.resume {
+.button-secondary {
     display: inline-block;
     background-color: white;
     border: 2px solid #ca1d05;
@@ -295,6 +324,7 @@ a:active {
     transition-duration: 0.4s;
     border-radius: 10px;
     align-items: center;
+    transition:all 0.25s ease;
 }
 
 
@@ -302,19 +332,47 @@ a:active {
 footer {
     display: inline-block;
     padding: 2em;
-    background-color: white;
-    color: black;
+    background-color: #232323;
+    color: white;
     text-align: center;
     width: 100%;
 }
-
+footer p {
+    font-weight: 200;
+}
+.copyright {
+    font-size: 12px;
+    margin-top:16px;
+}
 .email {
     color: #ca1d05;
 }
-
+.button-secondary svg{
+    width:24px;
+    margin-right: 8px;
+}
+.button-secondary.email {
+    margin: 1rem;
+    display: inline-flex;
+    align-items: center;
+    border-color: white;
+}
+.button-secondary:hover{
+    background: #ca1d05;
+    border-color:#ca1d05;
+    color: #fff;
+}
+.button-secondary:hover svg path{
+    fill:#fff;
+}
+.social-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
 .social {
     display: inline-block;
-    width: 10%;
+    width: 32px;
     margin: 4px;
 }
 
@@ -346,29 +404,26 @@ Medium devices (640px and larger)
         padding-top: 99px;
     }
 
-    #hero {
-        text-align: center;
-    }
 
     #hero span {
         display: block;
     }
 
+    .row {
+        display: flex;
+        align-items: center;
+    }
+
     .col-md-6 {
         width: 50%;
-        float: left;
-        padding: 50px;
+        padding: 30px;
     }
 
     [class*="col-"] {
         column-gap: 50px;
     }
 
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
+
 
     .logo {
         max-width: 150px;
@@ -385,6 +440,20 @@ Medium devices (640px and larger)
     .navtoggle li:last-child {
         display: none;
     }
+    #work .row{
+        margin:16px 0;
+    }
+    .project-image {
+        margin:0px auto;
+    }
+    .picture{
+        width: 40%;
+        min-width: 250px;
+        
+    }
+    .skills-block {
+        max-width: 50%;
+    }
 }
 
 /* ==============================
@@ -399,14 +468,12 @@ Medium devices (640px and larger)
 
     .col-lg-7 {
         width: 60%;
-        float: left;
-        padding: 50px;
+        padding: 30px;
     }
 
     .col-lg-5 {
         width: 40%;
-        float: left;
-        padding: 50px;
+        padding: 30px;
     }
 }
 
@@ -423,13 +490,11 @@ X-large devices (1440px or larger)
 
     .col-lg-7 {
         width: 60%;
-        float: left;
-        padding: 50px;
+        padding: 30px;
     }
 
     .col-lg-5 {
         width: 40%;
-        float: left;
-        padding: 50px;
+        padding: 30px;
     }
 }
